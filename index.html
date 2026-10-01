@@ -1,82 +1,165 @@
-<!doctype html>
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy — RTC (Rich Trim Coaching)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — RTC Fitness</title>
+<meta name="description" content="How RTC Fitness (Rich Trim Coaching) collects, uses and protects your data.">
 <style>
- body{max-width:46rem;margin:0 auto;padding:2rem 1.2rem 4rem;
-   font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-   color:#222;background:#fff}
- h1{font-size:2rem;margin:0 0 .3rem}
- h2{font-size:1.35rem;margin:2.2rem 0 .6rem;border-bottom:1px solid #e6e6e6;padding-bottom:.3rem}
- h3{font-size:1.08rem;margin:1.6rem 0 .4rem}
- table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.94rem}
- th,td{border:1px solid #ddd;padding:.5rem .6rem;text-align:left;vertical-align:top}
- th{background:#f5f5f5}
- code{background:#f3f3f3;padding:.1rem .3rem;border-radius:3px;font-size:.9em}
- blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid #ccc;background:#fafafa;color:#444}
- mark{background:#ffec7a;padding:0 .2rem}
- hr{border:0;border-top:1px solid #e6e6e6;margin:2rem 0}
- a{color:#1a5fb4}
- @media(prefers-color-scheme:dark){
-   body{background:#141416;color:#e6e6e6}
-   th{background:#1e1e22}th,td{border-color:#33333a}
-   code{background:#1e1e22}blockquote{background:#1a1a1e;border-left-color:#444}
-   hr,h2{border-color:#2a2a30}a{color:#7ab4ff}mark{background:#6b5d12;color:#fff}}
-</style></head><body>
-<h1>Privacy Policy — RTC (Rich Trim Coaching)</h1>
-<p><strong>Last updated: 20 September 2026</strong></p>
-<hr>
-<h2>1. Who we are</h2>
-<p>RTC (Rich Trim Coaching) is a fitness coaching app operated by</p>
-<p><strong>Richard Trim</strong> ("we", "us"), based in <strong>France</strong>.</p>
-<p>For the purposes of the UK GDPR and EU GDPR, we are the <strong>data controller</strong> for the personal data described below.</p>
-<p>Contact: <strong>Richardstrim89@gmail.com</strong></p>
-<h2>2. The short version</h2>
-<ul><li>Your training and nutrition data is stored <strong>on your device</strong> by default.</li><li>It is only copied to our cloud if you <strong>create an account</strong> and sign in. Guest users' data never leaves their phone.</li><li>We do <strong>not</strong> sell your data. We never share your health, training or nutrition data with advertisers. If you consent to personalised ads, advertising identifiers are shared with Google's ad network — you can decline and still use the app.</li><li>Meal photos and meal descriptions you submit are sent to Google's Gemini AI to identify the food, and are <strong>not stored by us</strong>.</li><li>You can <strong>delete your account and all associated data from inside the app</strong> at any time: Settings → Delete Account.</li></ul>
-<h2>3. What we collect</h2>
+  :root{--bg:#F6F4F0;--card:#FFFFFF;--ink:#1E1C1A;--muted:#5E5953;--line:#E6E1DA;--accent:#D9541E;--soft:#FBEFE8}
+  @media (prefers-color-scheme: dark){:root{--bg:#121315;--card:#1A1C1F;--ink:#ECEEF1;--muted:#A9B0BA;--line:#2C2F34;--accent:#FF8A4C;--soft:#2A1E17}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{border-bottom:3px solid var(--accent);background:var(--card)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:12px;padding:20px 0 6px}
+  .badge{font-weight:900;letter-spacing:.06em;color:#fff;background:linear-gradient(135deg,#FF8A3D,#D9541E);border-radius:8px;padding:4px 10px;font-size:15px}
+  .brand span{font-weight:800;letter-spacing:.18em;font-size:14px;color:var(--muted)}
+  h1{font-size:30px;line-height:1.2;margin:10px 0 4px}
+  .updated{color:var(--muted);margin:0 0 20px;font-size:14px}
+  main{padding:28px 0 60px}
+  h2{font-size:21px;margin:38px 0 10px;padding-top:6px;border-top:1px solid var(--line)}
+  h3{font-size:17px;margin:24px 0 6px}
+  p,li{max-width:68ch}
+  ul{padding-left:22px}
+  li{margin:4px 0}
+  a{color:var(--accent)}
+  .summary{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:14px 18px;margin:8px 0 6px}
+  .summary ul{margin:6px 0}
+  .tbl{overflow-x:auto;margin:10px 0}
+  table{border-collapse:collapse;width:100%;font-size:15px;background:var(--card)}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--soft)}
+  .note{color:var(--muted);font-size:14.5px}
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px;padding:18px 0 30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><div class="badge">RTC</div><span>FITNESS</span></div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">RTC Fitness (Rich Trim Coaching) · Last updated: 1 October 2026</p>
+</div></header>
+
+<main class="wrap">
+
+<h2 id="who">1. Who we are</h2>
+<p>RTC Fitness (Rich Trim Coaching) is a fitness coaching app operated by <strong>Richard Trim</strong> (“we”, “us”), based in <strong>France</strong>. For the purposes of the UK GDPR and EU GDPR, we are the <strong>data controller</strong> for the personal data described below.</p>
+<p>Contact: <a href="mailto:Richardstrim89@gmail.com">Richardstrim89@gmail.com</a></p>
+
+<h2 id="short">2. The short version</h2>
+<div class="summary"><ul>
+  <li>Your training and nutrition data is stored <strong>on your device</strong> by default.</li>
+  <li>It is only copied to our cloud if you <strong>create an account</strong> and sign in. Guest users’ data never leaves their phone.</li>
+  <li>We do <strong>not</strong> sell your data. We never share your health, training or nutrition data with advertisers.</li>
+  <li>If you connect <strong>Health Connect</strong>, we read only weight, sleep and steps, and write only the weigh-ins you log — with your permission, which you can withdraw at any time.</li>
+  <li>Meal photos and descriptions are sent to Google’s Gemini AI to identify the food; barcodes and food searches are looked up in the Open Food Facts database. We do not store your photos.</li>
+  <li>You can <strong>delete your account and all associated data from inside the app</strong>: Settings → Delete Account.</li>
+</ul></div>
+
+<h2 id="collect">3. What we collect</h2>
 <h3>3.1 Data you enter</h3>
-<table><thead><tr><th>Category</th><th>Examples</th><th>Special category?</th></tr></thead><tbody><tr><td>Profile</td><td>Name, age, gender, height, weight, body fat %</td><td><strong>Yes — health data</strong></td></tr><tr><td>Goals</td><td>Fitness goals, target weight, experience level</td><td><strong>Yes — health data</strong></td></tr><tr><td>Training</td><td>Logged sessions, sets, reps, weights, RPE, personal records</td><td><strong>Yes — health data</strong></td></tr><tr><td>Cardio</td><td>Logged runs, rides, swims, rows and walks: activity type, duration, distance, estimated calories</td><td><strong>Yes — health data</strong></td></tr><tr><td>Session activity</td><td>An unfinished workout kept for up to 12 hours so you can resume it, and — if you choose to tell us — why a session was stopped (for example "ran out of time"), used only to offer you a shorter plan</td><td><strong>Yes — health data</strong></td></tr><tr><td>Nutrition</td><td>Logged meals, calories, macros, water, meal photos</td><td><strong>Yes — health data</strong></td></tr><tr><td>Wellbeing</td><td>Sleep hours, flexibility, rehab and meditation logs</td><td><strong>Yes — health data</strong></td></tr><tr><td>Progress</td><td>Weight history, streaks, dumbbells, badges</td><td><strong>Yes — health data</strong></td></tr></tbody></table>
+<div class="tbl"><table>
+<tr><th>Category</th><th>Examples</th><th>Special category?</th></tr>
+<tr><td>Profile</td><td>Name, age, sex, height, weight, body fat %</td><td><strong>Yes — health data</strong></td></tr>
+<tr><td>Goals</td><td>Fitness goals, target weight or body fat %, timeframe, experience level</td><td><strong>Yes — health data</strong></td></tr>
+<tr><td>Training</td><td>Logged sessions, sets, reps, weights, effort ratings, personal records, exercises you remove from a session</td><td><strong>Yes — health data</strong></td></tr>
+<tr><td>Cardio</td><td>Activity type, duration, distance, estimated calories</td><td><strong>Yes — health data</strong></td></tr>
+<tr><td>Session activity</td><td>An unfinished workout kept for up to 12 hours so you can resume it, and — if you choose to tell us — why a session was stopped, used only to suggest a shorter plan</td><td><strong>Yes — health data</strong></td></tr>
+<tr><td>Nutrition</td><td>Logged meals, calories, macros, water, meal photos, foods you save to “My foods”</td><td><strong>Yes — health data</strong></td></tr>
+<tr><td>Wellbeing</td><td>Sleep hours, flexibility, rehab and meditation logs</td><td><strong>Yes — health data</strong></td></tr>
+<tr><td>Progress</td><td>Weight history, streaks, dumbbells, badges</td><td><strong>Yes — health data</strong></td></tr>
+</table></div>
 <p>We process this to provide the service you asked for: generating your training plan, calculating calorie and macro targets, and tracking your progress. <strong>Our lawful basis is your explicit consent</strong> (GDPR Art. 9(2)(a)), which you give by entering the data, and which you can withdraw at any time by deleting your account.</p>
+
 <h3>3.2 Account data</h3>
 <p>If you create an account: your <strong>email address</strong> and an authentication token, handled by Google Firebase Authentication. If you sign in with Google, we receive your email address and display name from Google. We never see or store your password.</p>
-<p><strong>Promo codes.</strong> If you redeem a beta promo code we store the code and the <strong>email address of the account that redeemed it</strong>, so that each code can only be used once and by one person. This is the only purpose it is used for. It is deleted with your account.</p>
-<h3>3.3 Preferences</h3>
-<p>We store your app settings — theme, whether cardio calories top up your daily target, timer sounds — so the app behaves the way you set it.</p>
-<h3>3.4 Data we do not collect</h3>
-<p>We do not collect your precise location, contacts, call logs, SMS, browsing history, or device identifiers for tracking purposes. The app requests <strong>camera</strong> access only when you use Snap Meal, and only to take that photo.</p>
-<h2>4. Where your data goes</h2>
+<p><strong>Promo codes.</strong> If you redeem a beta promo code we store the code and the <strong>email address of the account that redeemed it</strong>, so that each code can only be used once and by one person. It is deleted with your account.</p>
+
+<h3>3.3 Refer a friend</h3>
+<p>If you are signed in, the app creates a <strong>referral code</strong> linked to your account. If a new user enters your code, we store a referral record containing: your code, the two account identifiers (yours and theirs), the date, and whether they have completed their first full week. To decide that, the app checks <em>on their device</em> whether they completed every scheduled workout or confirmed their meals on 7 days in one week; only the result (“qualified”, which week, and whether it was workouts or meals) is stored — none of their training or nutrition details. When the referral qualifies, you receive a Guest Pass ticket. Referral records are deleted with the accounts involved.</p>
+
+<h3>3.4 Preferences and app activity</h3>
+<p>We store your app settings — theme, timer sounds, meal preferences, whether cardio calories top up your daily target, and when the app last asked you for a review — so the app behaves the way you set it.</p>
+
+<h3>3.5 Data we do not collect</h3>
+<p>We do not collect your precise location, contacts, call logs, SMS, browsing history, or device identifiers for tracking purposes (other than for advertising, as described in section 4.6). The app asks for <strong>camera</strong> access only when you use Snap Meal or Scan barcode, and only to take that photo or read that barcode.</p>
+
+<h2 id="where">4. Where your data goes</h2>
 <h3>4.1 On your device</h3>
-<p>All app data is stored in your device's local storage. If you never sign in, <strong>this is the only place it exists</strong> and we have no access to it whatsoever.</p>
+<p>All app data is stored in your device’s local storage. If you never sign in, <strong>this is the only place it exists</strong> and we have no access to it whatsoever.</p>
+
 <h3>4.2 Google Firebase (cloud sync)</h3>
-<p>If you sign in, your app data is synchronised to <strong>Google Firebase</strong> (Authentication and Cloud Firestore) so it is available across your devices and survives reinstalling. Google acts as our <strong>data processor</strong>. Firebase data may be stored on servers outside the UK/EEA; Google relies on <strong>Standard Contractual Clauses</strong> for those transfers.</p>
-<p>Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-<h3>4.3 Google Gemini (AI meal recognition)</h3>
-<p>When you use <strong>Snap Meal</strong> or <strong>Describe a meal</strong>, the photo or the text you typed — including any optional description you add to a photo — is sent to <strong>Google's Gemini API</strong> to identify the food and estimate its nutrition. This is sent for processing and the result is returned to your device.</p>
-<p>We do <strong>not</strong> store your meal photos on our servers. Google's handling of API data is governed by their own terms.</p>
-<h3>4.4 Advertising</h3>
-<p>Free users may be shown ads via <strong>Google AdMob</strong>. <strong>Pro subscribers see no ads.</strong></p>
-<p><strong>What is shared, and when.</strong> Where required by law we ask for your consent first, and you can refuse without losing access to the app.</p>
-<ul><li><strong>If you consent to personalised ads:</strong> your device's advertising identifier and related device information are shared with <strong>Google and its advertising partners</strong>, who use them to build an interest profile and select ads. This is sharing personal data with advertisers, and it happens only with your consent.</li><li><strong>If you decline:</strong> you see non-personalised ads. Limited data is still processed for frequency capping, fraud prevention and reporting, but no interest profile is built.</li></ul>
-<p><strong>What is never shared, either way:</strong> your health, training, nutrition, weight or progress data. None of it is sent to advertisers under any setting.</p>
-<p>You can change your choice at any time — on Android via <em>Settings → Privacy → Ads</em>, on iOS via <em>Settings → Privacy → Tracking</em>.</p>
-<p>AdMob / Google Ads privacy: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
-<h3>4.5 Content delivery</h3>
+<p>If you sign in, your app data is synchronised to <strong>Google Firebase</strong> (Authentication and Cloud Firestore) so it is available across your devices and survives reinstalling. Google acts as our <strong>data processor</strong>. Firebase data may be stored on servers outside the UK/EEA; Google relies on <strong>Standard Contractual Clauses</strong> for those transfers. Google’s privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
+
+<h3>4.3 Health Connect (Android)</h3>
+<p>If you choose to connect <strong>Health Connect</strong> in Settings, and only after you grant permission on your phone, RTC Fitness:</p>
+<ul>
+  <li><strong>reads</strong> your <strong>weight</strong> (last 30 days), <strong>sleep</strong> (last 14 nights) and <strong>steps</strong> (last 7 days), to show your progress, sleep and daily steps and to adjust your targets;</li>
+  <li><strong>writes</strong> the <strong>weigh-ins you log</strong> in the app, so your other health apps see them.</li>
+</ul>
+<p>Data read from Health Connect is stored with your other app data — on your device, and in your cloud account if you are signed in — and is used only to provide these features. It is <strong>never</strong> sold, never shared with advertisers or used for advertising, and never used to decide eligibility for credit, insurance or employment. You can disconnect at any time in Health Connect’s own settings or in the app, and delete the data by deleting your account.</p>
+<p><strong>The use of information received from Health Connect will adhere to the Health Connect Permissions policy, including the Limited Use requirements.</strong></p>
+
+<h3>4.4 Google Gemini (AI meal recognition)</h3>
+<p>When you use <strong>Snap Meal</strong> or <strong>Describe a meal</strong>, the photo or the text you typed — including any optional description you add to a photo — is sent to <strong>Google’s Gemini API</strong> to identify the food and estimate its nutrition. The result is returned to your device. We do <strong>not</strong> store your meal photos on our servers. Google’s handling of API data is governed by their own terms.</p>
+
+<h3>4.5 Open Food Facts (barcodes and food search)</h3>
+<p>When you <strong>scan a barcode</strong>, or search for a food that is not in the app’s built-in list, the barcode number or your search words are sent to <strong>Open Food Facts</strong> (<a href="https://world.openfoodfacts.org">openfoodfacts.org</a>), a free, open food database, to look up the product. No account details or health data are sent. Products you choose are saved to “My foods” in the app. Open Food Facts may see your IP address as part of answering the request.</p>
+
+<h3>4.6 Advertising</h3>
+<p>Free users may be shown ads via <strong>Google AdMob</strong>. <strong>Pro subscribers see no ads.</strong> Where required by law we ask for your consent first, using Google’s consent form, and you can refuse without losing access to the app.</p>
+<ul>
+  <li><strong>If you consent to personalised ads:</strong> your device’s advertising identifier and related device information are shared with <strong>Google and its advertising partners</strong>, who use them to select ads. This happens only with your consent.</li>
+  <li><strong>If you decline:</strong> you see non-personalised ads. Limited data is still processed for frequency capping, fraud prevention and reporting, but no interest profile is built.</li>
+</ul>
+<p><strong>Never shared, either way:</strong> your health, training, nutrition, weight, Health Connect or progress data.</p>
+<p>You can change your choice at any time in the app (Settings → Ad privacy choices), and on Android via <em>Settings → Google → Ads</em>. AdMob / Google Ads privacy: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+
+<h3>4.7 Google Play (updates and reviews)</h3>
+<p>The app asks Google Play whether a newer version is available so it can offer you the update. If you choose to rate the app, it opens the app’s Google Play page; any review you leave is handled by Google, not by us.</p>
+
+<h3>4.8 Problem reports and feedback</h3>
+<p>If you choose <strong>Report a problem</strong> or <strong>Send feedback</strong>, the app opens your own email app with a short device and app summary and a log of what the app did (screens visited, errors). Keys and email addresses are removed from the log first. <strong>Nothing is sent unless you press send</strong> in your email app.</p>
+
+<h3>4.9 Content delivery</h3>
 <p>The app loads fonts and icons from third-party CDNs (Google Fonts, Font Awesome). These providers may see your IP address as a normal consequence of serving those files.</p>
-<h2>5. How long we keep it</h2>
-<ul><li><strong>Local data:</strong> until you delete it, reset the app, or uninstall.</li><li><strong>Cloud data:</strong> until you delete your account.</li><li><strong>Deleted accounts:</strong> removed from our active database immediately. Residual copies may persist in Google's encrypted backups for a short period before being overwritten in the normal course of their retention cycle.</li></ul>
-<h2>6. Your rights</h2>
+
+<h2 id="keep">5. How long we keep it</h2>
+<ul>
+  <li><strong>Local data:</strong> until you delete it, reset the app, or uninstall.</li>
+  <li><strong>Cloud data, including referral records:</strong> until you delete your account.</li>
+  <li><strong>Deleted accounts:</strong> removed from our active database immediately. Residual copies may persist in Google’s encrypted backups for a short period before being overwritten in the normal course of their retention cycle.</li>
+</ul>
+
+<h2 id="rights">6. Your rights</h2>
 <p>Under UK and EU GDPR you have the right to:</p>
-<ul><li><strong>Access</strong> your data — export it yourself at any time via Settings → Export Data, which produces a complete machine-readable copy.</li><li><strong>Rectify</strong> it — edit any of it directly in the app.</li><li><strong>Erase</strong> it — Settings → Delete Account removes your account, your cloud copy and your local data. You can also email us.</li><li><strong>Portability</strong> — the Export Data file is JSON, a structured, commonly used, machine-readable format.</li><li><strong>Withdraw consent</strong> — stop using the app and delete your account.</li><li><strong>Object</strong> or <strong>restrict</strong> processing — contact us.</li></ul>
-<p>To exercise any right, use the in-app controls or email</p>
-<p><strong>Richardstrim89@gmail.com</strong>. We will respond within one month.</p>
-<p>You may also complain to your supervisory authority — the <strong>CNIL</strong> in France, the <strong>ICO</strong> in the UK, or your national authority in the EU.</p>
-<h2>7. Children</h2>
-<p>RTC is <strong>not intended for anyone under 16</strong>. We do not knowingly collect data from children. If you believe a child has provided us data, contact us and we will delete it.</p>
-<h2>8. Security</h2>
-<p>Data in transit is encrypted with TLS. Cloud data is protected by Firebase security rules that restrict each document to its owning account. No system is perfectly secure, and we cannot guarantee absolute security.</p>
-<h2>9. Changes</h2>
+<ul>
+  <li><strong>Access</strong> your data — export it yourself at any time via Settings → Export Data, which produces a complete machine-readable copy.</li>
+  <li><strong>Rectify</strong> it — edit any of it directly in the app.</li>
+  <li><strong>Erase</strong> it — Settings → Delete Account removes your account, your cloud copy and your local data. You can also email us.</li>
+  <li><strong>Portability</strong> — the Export Data file is JSON, a structured, commonly used, machine-readable format.</li>
+  <li><strong>Withdraw consent</strong> — disconnect Health Connect, change your ad choices, or delete your account.</li>
+  <li><strong>Object</strong> or <strong>restrict</strong> processing — contact us.</li>
+</ul>
+<p>To exercise any right, use the in-app controls or email <a href="mailto:Richardstrim89@gmail.com">Richardstrim89@gmail.com</a>. We will respond within one month. You may also complain to your supervisory authority — the <strong>CNIL</strong> in France, the <strong>ICO</strong> in the UK, or your national authority in the EU.</p>
+
+<h2 id="medical">7. Health information is guidance, not medical advice</h2>
+<p>RTC Fitness gives general fitness, nutrition and wellbeing guidance. It is <strong>not medical advice</strong>, and it is not a substitute for a doctor, registered dietitian or physiotherapist. Plans are generated by the app rather than written for you by a qualified professional. Check with a doctor before starting if you have a medical condition or injury, are pregnant, take regular medication, or have a history of disordered eating. The app shows this on first use and keeps a copy in Settings.</p>
+
+<h2 id="children">8. Children</h2>
+<p>RTC Fitness is <strong>not intended for anyone under 16</strong>. We do not knowingly collect data from children. If you believe a child has provided us data, contact us and we will delete it.</p>
+
+<h2 id="security">9. Security</h2>
+<p>Data in transit is encrypted with TLS. Cloud data is protected by Firebase security rules that restrict each person’s data to their own account; referral records can only be changed in the specific ways the Refer a friend feature needs. No system is perfectly secure, and we cannot guarantee absolute security.</p>
+
+<h2 id="changes">10. Changes</h2>
 <p>We will update this policy as the app changes, and will revise the date at the top. Material changes will be notified in the app.</p>
-<h2>10. Contact</h2>
-<p><strong>Richard Trim</strong> Email: <strong>Richardstrim89@gmail.com</strong> Policy URL: <strong><a href="https://rtcfitness.github.io/rtc-privacy/">https://rtcfitness.github.io/rtc-privacy/</a></strong></p>
-</body></html>
+
+<h2 id="contact">11. Contact</h2>
+<p><strong>Richard Trim</strong><br>Email: <a href="mailto:Richardstrim89@gmail.com">Richardstrim89@gmail.com</a><br>Policy URL: <a href="https://rtcfitness.github.io/rtc-privacy/">rtcfitness.github.io/rtc-privacy</a></p>
+
+</main>
+<footer><div class="wrap">© 2026 Richard Trim · RTC Fitness (Rich Trim Coaching)</div></footer>
+</body>
+</html>
